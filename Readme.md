@@ -9,14 +9,17 @@
 
 ## Structure du Programme:
 
- 
-- la classe  Verif  permet de charger le fichier qui contien la trame et vérifier sa consistance.
+Classe Verif: Preparation de la liste contenant les octets de la trame 
 
+Classe Ethernet: Décortiquer la trame pour extraire les mac address et le type 
 
- - La méthode fic_to_liste charge le fichier et le sérialise sous frome d'une liste de valeur hexhadécimales
- - La methode ouverture de la classe verif permet de charger la trame au sein d'un ficher texte et d'assurer sa validité ainsi que de lui débrrasser les commentaire qui y figurent
+Class IP: Trouver son début grâce a la trame Ethernet. La classe extrait toutes parties traités par Wireshark 
 
--  La classe Ethernet  englobe l'ensemble des méthodes responsable de l'abalyse de la trame réseau.
--  La méthode  adresse_mac détermine les adresses Mac source et destination 
-- la méthode trame_type  détermine le type et sa définition de la trame à partir d'un dictionnaire de types possibles"
-- La classe IP renferme l'ensemble des méthodes responsables de déterminer     la version  l'IP, Tos , taille de données, l'identificateur , les flag , le TTL , le protocole utilisé , le checksum , l'IP source et destination ainsi que les options de la trame disponibles. 
+Class UDP: Contient l’objet UDP et les fonctions pour extraire tous les champs du protocole UDP 
+
+Class DNS: Contient l’objet DNS et les fonctions pour extraire les differents champs. De plus, elle traite les compression label en utilisant une fonction récursive 
+
+Class DHCP: Contient l’objet DHCP et toutes les fonction permettant d’extraire les champs nécessaires 
+
+Class Main: Fait appel à toutes les classes et leurs fonctions afin de faire les analyses 
+
