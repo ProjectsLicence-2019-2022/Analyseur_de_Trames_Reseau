@@ -1,10 +1,10 @@
 ## Introduction:
-  Dans ce projet on se propose d'analyser des trames de données capturé avec un logiciel de capture  Wireshark (https://www.wireshark.org/). Dans ce contexte, la liste de données suivante sera présentée :
+  Dans ce projet on se propose d'analyser des trames de données capturé avec un logiciel de capture  Wireshark. Dans ce contexte, la liste de données suivante sera présentée :
 		- Ethernet 
 		- IP  
 		- UDP 
 		- DNS 
-        - DHCP 
+		- DHCP 
 
 
 ## Structure du Programme:
