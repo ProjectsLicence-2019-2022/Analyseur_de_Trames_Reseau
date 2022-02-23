@@ -13,7 +13,7 @@
 - la classe  Verif  permet de charger le fichier qui contien la trame et vérifier sa consistance.
 
 
- - La méthode fic_to_liste charge le fichier et le sérialise sous frome d'une liste de valeur exhadécimales
+ - La méthode fic_to_liste charge le fichier et le sérialise sous frome d'une liste de valeur hexhadécimales
  - La methode  ouverture de la classe la classe verif permet de cahrger la trame au sein d'unficher texte et d'assure re sa validité ainsi que de lui débrrasser des commentaire qu y figurent/  
 
 -  La classe Ethernet  englobe l'ensemble des méthodes responsable de l'abalyse de la trame réseau.
